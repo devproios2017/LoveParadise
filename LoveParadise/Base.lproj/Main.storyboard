@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ed0-h0-oa8">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,50 +10,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginViewController-->
         <scene sceneID="weI-zF-t0Q">
             <objects>
-                <viewController id="Dec-dV-XBj" sceneMemberID="viewController">
+                <viewController title="LoginViewController" id="Dec-dV-XBj" customClass="LoginViewController" customModule="LoveParadise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Xb-VH-kuM"/>
                         <viewControllerLayoutGuide type="bottom" id="Upy-rj-nfU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="soE-eq-AAi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpM-tx-HKJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="189.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52l-dp-A2C">
-                                <rect key="frame" x="0.0" y="189.5" width="320" height="378.5"/>
+                                <rect key="frame" x="0.0" y="222.5" width="375" height="444.5"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BrY-Ik-cZt">
-                                <rect key="frame" x="64" y="209.5" width="192" height="21.5"/>
+                                <rect key="frame" x="75" y="242.5" width="225" height="25.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FWj-EZ-OB7">
-                                <rect key="frame" x="64" y="261" width="192" height="21.5"/>
+                                <rect key="frame" x="75" y="298" width="225" height="26"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OK-83-ZVB">
-                                <rect key="frame" x="32" y="312.5" width="96" height="32.5"/>
+                                <rect key="frame" x="37.5" y="354" width="112.5" height="39"/>
                                 <state key="normal" title="Đăng nhập"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ast-f4-JzH">
-                                <rect key="frame" x="192" y="312.5" width="96" height="32.5"/>
+                                <rect key="frame" x="225" y="354" width="112.5" height="39"/>
                                 <state key="normal" title="Thoát"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsM-op-g7d">
-                                <rect key="frame" x="32" y="395" width="96" height="32.5"/>
+                                <rect key="frame" x="37.5" y="443" width="112.5" height="38.5"/>
                                 <state key="normal" title="Facebook"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD5-VG-z4z">
-                                <rect key="frame" x="25" y="508" width="270.5" height="30"/>
+                                <rect key="frame" x="52.5" y="607" width="270.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn đã có tài khoản chưa?   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIY-AO-cvG">
                                         <rect key="frame" x="0.0" y="0.0" width="214.5" height="30"/>
@@ -64,11 +64,14 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QF2-8e-tiT">
                                         <rect key="frame" x="214.5" y="0.0" width="56" height="30"/>
                                         <state key="normal" title="Đăng ký"/>
+                                        <connections>
+                                            <segue destination="SOM-cC-J42" kind="show" id="rfc-V0-6yY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM9-ee-q3c">
-                                <rect key="frame" x="192" y="395" width="96" height="32.5"/>
+                                <rect key="frame" x="225" y="443" width="112.5" height="38.5"/>
                                 <state key="normal" title="Google+"/>
                             </button>
                         </subviews>
@@ -110,28 +113,124 @@
                             <constraint firstItem="FWj-EZ-OB7" firstAttribute="top" secondItem="BrY-Ik-cZt" secondAttribute="bottom" constant="30" id="zWZ-p8-Hfa"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="t1U-bm-vod"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Y7-da-Te5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="277.60000000000002" y="-525.78710644677665"/>
+            <point key="canvasLocation" x="1216.8" y="-525.78710644677665"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="6OV-5Z-tM3">
+        <!--Register View Controller-->
+        <scene sceneID="9st-KD-1Vx">
             <objects>
-                <viewController id="nQ8-hE-ni6" sceneMemberID="viewController">
+                <viewController id="SOM-cC-J42" customClass="RegisterViewController" customModule="LoveParadise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="apF-j2-bGx"/>
-                        <viewControllerLayoutGuide type="bottom" id="7QI-pr-hhE"/>
+                        <viewControllerLayoutGuide type="top" id="jcP-PB-Mvg"/>
+                        <viewControllerLayoutGuide type="bottom" id="FaQ-Kf-Hr8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZHA-17-Lb5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <view key="view" contentMode="scaleToFill" id="AdH-EU-bhP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-UH-Ut3">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyG-gd-mMf">
+                                <rect key="frame" x="75" y="180.5" width="225" height="36.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zew-Hm-cZr">
+                                <rect key="frame" x="75" y="247" width="225" height="36.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sJy-jo-Iyt">
+                                <rect key="frame" x="75" y="313.5" width="225" height="36.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Biệt danh" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwm-R2-6kY">
+                                <rect key="frame" x="75" y="380" width="225" height="36.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tài khoản" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-8j-lOp">
+                                <rect key="frame" x="75" y="114" width="225" height="36.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNo-kP-A7N">
+                                <rect key="frame" x="38" y="466.5" width="112.5" height="55"/>
+                                <state key="normal" title="Đăng ký"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-JI-M8K">
+                                <rect key="frame" x="225" y="466" width="112.5" height="55"/>
+                                <state key="normal" title="Thoát"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UNo-kP-A7N" firstAttribute="width" secondItem="gwm-R2-6kY" secondAttribute="width" multiplier="0.5" id="2Lf-G7-tbs"/>
+                            <constraint firstItem="BpM-8j-lOp" firstAttribute="height" secondItem="iPF-UH-Ut3" secondAttribute="height" multiplier="1/17" id="3e4-rF-6Kz"/>
+                            <constraint firstItem="gwm-R2-6kY" firstAttribute="width" secondItem="sJy-jo-Iyt" secondAttribute="width" id="47Z-y1-s9M"/>
+                            <constraint firstItem="UNo-kP-A7N" firstAttribute="top" secondItem="gwm-R2-6kY" secondAttribute="bottom" constant="50" id="6Zy-jH-QPI"/>
+                            <constraint firstItem="iPF-UH-Ut3" firstAttribute="leading" secondItem="AdH-EU-bhP" secondAttribute="leading" id="7SV-Jl-nN3"/>
+                            <constraint firstItem="3hv-JI-M8K" firstAttribute="height" secondItem="UNo-kP-A7N" secondAttribute="height" id="9M2-hX-dme"/>
+                            <constraint firstItem="BpM-8j-lOp" firstAttribute="centerX" secondItem="AdH-EU-bhP" secondAttribute="centerX" id="BF6-Df-XC4"/>
+                            <constraint firstItem="FaQ-Kf-Hr8" firstAttribute="top" secondItem="iPF-UH-Ut3" secondAttribute="bottom" id="CcN-Kn-fEA"/>
+                            <constraint firstItem="gwm-R2-6kY" firstAttribute="height" secondItem="sJy-jo-Iyt" secondAttribute="height" id="EFo-mo-0dg"/>
+                            <constraint firstItem="BpM-8j-lOp" firstAttribute="top" secondItem="jcP-PB-Mvg" secondAttribute="bottom" constant="50" id="GZQ-fh-stj"/>
+                            <constraint firstItem="3hv-JI-M8K" firstAttribute="centerX" secondItem="AdH-EU-bhP" secondAttribute="centerX" multiplier="1.5" id="I1T-zb-UiV"/>
+                            <constraint firstItem="zew-Hm-cZr" firstAttribute="centerX" secondItem="AdH-EU-bhP" secondAttribute="centerX" id="Iib-P1-iHU"/>
+                            <constraint firstItem="jyG-gd-mMf" firstAttribute="width" secondItem="BpM-8j-lOp" secondAttribute="width" id="JvD-z4-olV"/>
+                            <constraint firstItem="gwm-R2-6kY" firstAttribute="top" secondItem="sJy-jo-Iyt" secondAttribute="bottom" constant="30" id="LAB-3X-n1C"/>
+                            <constraint firstItem="sJy-jo-Iyt" firstAttribute="top" secondItem="zew-Hm-cZr" secondAttribute="bottom" constant="30" id="Ly1-GM-sa9"/>
+                            <constraint firstItem="zew-Hm-cZr" firstAttribute="top" secondItem="jyG-gd-mMf" secondAttribute="bottom" constant="30" id="M9S-Qq-rtQ"/>
+                            <constraint firstItem="sJy-jo-Iyt" firstAttribute="centerX" secondItem="AdH-EU-bhP" secondAttribute="centerX" id="O2b-58-DJl"/>
+                            <constraint firstItem="sJy-jo-Iyt" firstAttribute="width" secondItem="zew-Hm-cZr" secondAttribute="width" id="TRF-mt-FlP"/>
+                            <constraint firstItem="jyG-gd-mMf" firstAttribute="height" secondItem="BpM-8j-lOp" secondAttribute="height" id="ToH-ap-ot4"/>
+                            <constraint firstItem="3hv-JI-M8K" firstAttribute="top" secondItem="gwm-R2-6kY" secondAttribute="bottom" constant="50" id="Yhs-nT-y02"/>
+                            <constraint firstItem="zew-Hm-cZr" firstAttribute="height" secondItem="jyG-gd-mMf" secondAttribute="height" id="Z3J-NW-Xex"/>
+                            <constraint firstItem="gwm-R2-6kY" firstAttribute="centerX" secondItem="AdH-EU-bhP" secondAttribute="centerX" id="dFk-Vm-SkB"/>
+                            <constraint firstItem="iPF-UH-Ut3" firstAttribute="top" secondItem="jcP-PB-Mvg" secondAttribute="bottom" constant="-20" id="ewd-VE-llk"/>
+                            <constraint firstItem="jyG-gd-mMf" firstAttribute="top" secondItem="BpM-8j-lOp" secondAttribute="bottom" constant="30" id="hgr-wJ-UlF"/>
+                            <constraint firstAttribute="trailing" secondItem="iPF-UH-Ut3" secondAttribute="trailing" id="hnL-je-bWn"/>
+                            <constraint firstItem="sJy-jo-Iyt" firstAttribute="height" secondItem="zew-Hm-cZr" secondAttribute="height" id="ikE-mv-d9i"/>
+                            <constraint firstItem="3hv-JI-M8K" firstAttribute="width" secondItem="UNo-kP-A7N" secondAttribute="width" id="kNW-GB-1b1"/>
+                            <constraint firstItem="BpM-8j-lOp" firstAttribute="width" secondItem="iPF-UH-Ut3" secondAttribute="width" multiplier="3/5" id="otB-pT-pDO"/>
+                            <constraint firstItem="zew-Hm-cZr" firstAttribute="width" secondItem="jyG-gd-mMf" secondAttribute="width" id="q8p-Jk-SUD"/>
+                            <constraint firstItem="UNo-kP-A7N" firstAttribute="height" secondItem="gwm-R2-6kY" secondAttribute="height" multiplier="1.5" id="sxh-Ke-BTv"/>
+                            <constraint firstItem="UNo-kP-A7N" firstAttribute="centerX" secondItem="AdH-EU-bhP" secondAttribute="centerX" multiplier="0.5" id="vbo-c1-qhN"/>
+                            <constraint firstItem="jyG-gd-mMf" firstAttribute="centerX" secondItem="AdH-EU-bhP" secondAttribute="centerX" id="zXq-Sn-vvl"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XuJ-lp-qHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzA-rI-q8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="-524"/>
+            <point key="canvasLocation" x="2124" y="-526.6866566716642"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="06s-2I-dUg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ed0-h0-oa8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kcs-g4-DSa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dec-dV-XBj" kind="relationship" relationship="rootViewController" id="qmv-IH-GSD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfC-Vy-bdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277.60000000000002" y="-525.78710644677665"/>
         </scene>
     </scenes>
 </document>
