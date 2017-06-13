@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var userNameTv: UITextField!
+    @IBOutlet weak var passWordTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
-        // Do any additional setup after loading the view.
+        
+        Auth.auth().addStateDidChangeListener({auth, user in
+            if user != nil {
+                // perform segue to mainApp
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +30,19 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func siginBtn(_ sender: Any) {
+        guard userNameTv.text != nil, passWordTF.text != nil else {
+            return
+        }
+        
+        Auth.auth().signIn(withEmail: userNameTv.text!, password: passWordTF.text!, completion: { user, error in
+            if error == nil {
+                print("login success:\(user?.uid ?? "@.@")")
+            }else{
+                print("login failed:\(error?.localizedDescription)")
+            }
+        })
     }
-    */
+    
 
 }
