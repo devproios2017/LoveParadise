@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
@@ -34,13 +34,16 @@ class LoginViewController: UIViewController {
         guard userNameTv.text != nil, passWordTF.text != nil else {
             return
         }
-        
+        // ustest1@gmail.com - 123456
         Auth.auth().signIn(withEmail: userNameTv.text!, password: passWordTF.text!, completion: { user, error in
             if error == nil {
                 print("login success:\(user?.uid ?? "@.@")")
             }else{
                 print("login failed:\(error?.localizedDescription)")
             }
+            
+            
+        
         })
     }
     
