@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0404BBF31F050629005011B2 /* TransparentUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404BBF21F050629005011B2 /* TransparentUITextField.swift */; };
 		04E4E1A61F0294BF0059C509 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04E4E1A51F0294BF0059C509 /* GoogleService-Info.plist */; };
+		04E5A3D11F05F3EA00E817DE /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5A3D01F05F3EA00E817DE /* UIButton+extension.swift */; };
 		04EFB7621EE97A5F00C7FA34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB7611EE97A5F00C7FA34 /* AppDelegate.swift */; };
 		04EFB7671EE97A5F00C7FA34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EFB7651EE97A5F00C7FA34 /* Main.storyboard */; };
 		04EFB7691EE97A5F00C7FA34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EFB7681EE97A5F00C7FA34 /* Assets.xcassets */; };
@@ -19,7 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0404BBF21F050629005011B2 /* TransparentUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentUITextField.swift; sourceTree = "<group>"; };
 		04E4E1A51F0294BF0059C509 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04E5A3D01F05F3EA00E817DE /* UIButton+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
 		04EFB75E1EE97A5F00C7FA34 /* LoveParadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveParadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EFB7611EE97A5F00C7FA34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EFB7661EE97A5F00C7FA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0404BBF11F0505E1005011B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0404BBF21F050629005011B2 /* TransparentUITextField.swift */,
+				04E5A3D01F05F3EA00E817DE /* UIButton+extension.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		04EFB7551EE97A5F00C7FA34 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 		04EFB7601EE97A5F00C7FA34 /* LoveParadise */ = {
 			isa = PBXGroup;
 			children = (
+				0404BBF11F0505E1005011B2 /* Common */,
 				04EFB7611EE97A5F00C7FA34 /* AppDelegate.swift */,
 				04EFB7651EE97A5F00C7FA34 /* Main.storyboard */,
 				04EFB7681EE97A5F00C7FA34 /* Assets.xcassets */,
@@ -223,8 +237,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3E836E1EE98E91000A4FCB /* RegisterViewController.swift in Sources */,
+				04E5A3D11F05F3EA00E817DE /* UIButton+extension.swift in Sources */,
 				04F911261EF036FC00B56513 /* MainControllerViewController.swift in Sources */,
 				3B3E836C1EE98E20000A4FCB /* LoginViewController.swift in Sources */,
+				0404BBF31F050629005011B2 /* TransparentUITextField.swift in Sources */,
 				04EFB7621EE97A5F00C7FA34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
