@@ -6,8 +6,11 @@ target 'LoveParadise' do
   use_frameworks!
 
   # Pods for LoveParadise
-	pod 'Firebase/Core'
+    pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
+    pod 'FacebookCore', '~> 0.2.0'
+    pod 'FacebookLogin', '~> 0.2.0'
+    pod 'FacebookShare', :git => 'https://github.com/1amageek/facebook-sdk-swift'
 
 end
