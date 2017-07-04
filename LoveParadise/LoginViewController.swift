@@ -16,9 +16,9 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //hide navigationbar
+        // hide navigation bar
         navigationController?.navigationBar.isHidden = true
-        //loginfirebase
+        //login firebase
         Auth.auth().addStateDidChangeListener({auth, user in
             if user != nil {
                 // perform segue to mainApp
@@ -33,25 +33,20 @@ class LoginViewController: BaseViewController {
     super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
-
     func validate() -> Bool {
-        if TextField.isNil(userNameTv,passWordTF) {
-            self.showAlert(msg: "Bạn phải điền đẩy đủ thông tin")
+        if TextField.isNil(tfID,tfPassword){
+            self.showAlert(msg: "Bạn cần điền tài khoản và mật khẩu")
             return false
         }
         return true
     }
-    
+
     @IBAction func siginBtn(_ sender: Any) {
-        if validate() {
+        if validate(){
             login()
-            }
-        return
+        }
         
+        // ustest1@gmail.com - 123456
     }
     func login(){
         Auth.auth().signIn(withEmail: userNameTv.text!, password: passWordTF.text!, completion: { user, error in
@@ -64,6 +59,7 @@ class LoginViewController: BaseViewController {
             
             
         })
+
     }
     
 

@@ -15,6 +15,7 @@ class TextField {
         for textField in textFields {
             if (textField.text?.isEmpty)! {
                 check = false
+//                textField.showAndHiddenIconTextField(showAndHidden: true)
             }
         }
         return check
