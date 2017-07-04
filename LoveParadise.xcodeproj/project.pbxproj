@@ -17,6 +17,10 @@
 		04F911261EF036FC00B56513 /* MainControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F911251EF036FC00B56513 /* MainControllerViewController.swift */; };
 		3B3E836C1EE98E20000A4FCB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E836B1EE98E20000A4FCB /* LoginViewController.swift */; };
 		3B3E836E1EE98E91000A4FCB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E836D1EE98E91000A4FCB /* RegisterViewController.swift */; };
+		3BDB165F1F0BC64400E5DB78 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB165D1F0BC64400E5DB78 /* ProductsTableViewCell.swift */; };
+		3BDB16601F0BC64400E5DB78 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB165E1F0BC64400E5DB78 /* ProductsViewController.swift */; };
+		3BDB16631F0BC74F00E5DB78 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB16621F0BC74F00E5DB78 /* BaseViewController.swift */; };
+		3BDB16651F0BC76100E5DB78 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB16641F0BC76100E5DB78 /* TextField.swift */; };
 		F3F2F9D19AB51D6ADA467073 /* Pods_LoveParadise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFF837DF614CF42F237985B /* Pods_LoveParadise.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,10 @@
 		04F911251EF036FC00B56513 /* MainControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainControllerViewController.swift; sourceTree = "<group>"; };
 		3B3E836B1EE98E20000A4FCB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B3E836D1EE98E91000A4FCB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3BDB165D1F0BC64400E5DB78 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		3BDB165E1F0BC64400E5DB78 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		3BDB16621F0BC74F00E5DB78 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3BDB16641F0BC76100E5DB78 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		4AFF837DF614CF42F237985B /* Pods_LoveParadise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveParadise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA625CE83AE49AC75A9C561A /* Pods-LoveParadise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveParadise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoveParadise/Pods-LoveParadise.debug.xcconfig"; sourceTree = "<group>"; };
 		D7C53BC31C26254C1A866C85 /* Pods-LoveParadise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveParadise.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveParadise/Pods-LoveParadise.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +96,9 @@
 		04EFB7601EE97A5F00C7FA34 /* LoveParadise */ = {
 			isa = PBXGroup;
 			children = (
+				3BDB16611F0BC73A00E5DB78 /* Controller */,
+				3BDB165D1F0BC64400E5DB78 /* ProductsTableViewCell.swift */,
+				3BDB165E1F0BC64400E5DB78 /* ProductsViewController.swift */,
 				0404BBF11F0505E1005011B2 /* Common */,
 				04EFB7611EE97A5F00C7FA34 /* AppDelegate.swift */,
 				04EFB7651EE97A5F00C7FA34 /* Main.storyboard */,
@@ -100,6 +111,15 @@
 				04F911251EF036FC00B56513 /* MainControllerViewController.swift */,
 			);
 			path = LoveParadise;
+			sourceTree = "<group>";
+		};
+		3BDB16611F0BC73A00E5DB78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BDB16641F0BC76100E5DB78 /* TextField.swift */,
+				3BDB16621F0BC74F00E5DB78 /* BaseViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		F90CE3E94C6E390973CE66B2 /* Pods */ = {
@@ -238,7 +258,11 @@
 			files = (
 				3B3E836E1EE98E91000A4FCB /* RegisterViewController.swift in Sources */,
 				04E5A3D11F05F3EA00E817DE /* UIButton+extension.swift in Sources */,
+				3BDB16601F0BC64400E5DB78 /* ProductsViewController.swift in Sources */,
+				3BDB16651F0BC76100E5DB78 /* TextField.swift in Sources */,
+				3BDB165F1F0BC64400E5DB78 /* ProductsTableViewCell.swift in Sources */,
 				04F911261EF036FC00B56513 /* MainControllerViewController.swift in Sources */,
+				3BDB16631F0BC74F00E5DB78 /* BaseViewController.swift in Sources */,
 				3B3E836C1EE98E20000A4FCB /* LoginViewController.swift in Sources */,
 				0404BBF31F050629005011B2 /* TransparentUITextField.swift in Sources */,
 				04EFB7621EE97A5F00C7FA34 /* AppDelegate.swift in Sources */,
