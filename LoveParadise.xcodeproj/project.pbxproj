@@ -17,6 +17,7 @@
 		04F911261EF036FC00B56513 /* MainControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F911251EF036FC00B56513 /* MainControllerViewController.swift */; };
 		3B3E836C1EE98E20000A4FCB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E836B1EE98E20000A4FCB /* LoginViewController.swift */; };
 		3B3E836E1EE98E91000A4FCB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E836D1EE98E91000A4FCB /* RegisterViewController.swift */; };
+		EA1A375D1F0B8BFD00278DA3 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A375C1F0B8BFD00278DA3 /* ProductsViewController.swift */; };
 		F3F2F9D19AB51D6ADA467073 /* Pods_LoveParadise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFF837DF614CF42F237985B /* Pods_LoveParadise.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		4AFF837DF614CF42F237985B /* Pods_LoveParadise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoveParadise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA625CE83AE49AC75A9C561A /* Pods-LoveParadise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveParadise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoveParadise/Pods-LoveParadise.debug.xcconfig"; sourceTree = "<group>"; };
 		D7C53BC31C26254C1A866C85 /* Pods-LoveParadise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoveParadise.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoveParadise/Pods-LoveParadise.release.xcconfig"; sourceTree = "<group>"; };
+		EA1A375C1F0B8BFD00278DA3 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				3B3E836B1EE98E20000A4FCB /* LoginViewController.swift */,
 				3B3E836D1EE98E91000A4FCB /* RegisterViewController.swift */,
 				04F911251EF036FC00B56513 /* MainControllerViewController.swift */,
+				EA1A375C1F0B8BFD00278DA3 /* ProductsViewController.swift */,
 			);
 			path = LoveParadise;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			files = (
 				3B3E836E1EE98E91000A4FCB /* RegisterViewController.swift in Sources */,
 				04E5A3D11F05F3EA00E817DE /* UIButton+extension.swift in Sources */,
+				EA1A375D1F0B8BFD00278DA3 /* ProductsViewController.swift in Sources */,
 				04F911261EF036FC00B56513 /* MainControllerViewController.swift in Sources */,
 				3B3E836C1EE98E20000A4FCB /* LoginViewController.swift in Sources */,
 				0404BBF31F050629005011B2 /* TransparentUITextField.swift in Sources */,
@@ -369,6 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M2RA99FCAZ;
 				INFOPLIST_FILE = LoveParadise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dht.LoveParadise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M2RA99FCAZ;
 				INFOPLIST_FILE = LoveParadise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dht.LoveParadise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
