@@ -11,11 +11,10 @@ import UIKit
 class TextField {
     //Hàm check nil TextField
     static func isNil(_ textFields: UITextField...) -> Bool  {
-        var check = true
+        var check = false
         for textField in textFields {
             if (textField.text?.isEmpty)! {
-                check = false
-//                textField.showAndHiddenIconTextField(showAndHidden: true)
+                check = true
             }
         }
         return check

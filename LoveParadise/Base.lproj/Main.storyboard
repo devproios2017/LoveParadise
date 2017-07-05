@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9dN-GE-JPj">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ed0-h0-oa8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +13,7 @@
         <!--LoginViewController-->
         <scene sceneID="weI-zF-t0Q">
             <objects>
-                <viewController title="LoginViewController" id="Dec-dV-XBj" customClass="LoginViewController" customModule="LoveParadise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="LoginViewController" storyboardIdentifier="LoginViewController" title="LoginViewController" id="Dec-dV-XBj" customClass="LoginViewController" customModule="LoveParadise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Xb-VH-kuM"/>
                         <viewControllerLayoutGuide type="bottom" id="Upy-rj-nfU"/>
@@ -92,7 +92,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="siginBtn:" destination="Dec-dV-XBj" eventType="touchUpInside" id="jCv-Yr-VUG"/>
+                                    <action selector="actionButton:" destination="Dec-dV-XBj" eventType="touchUpInside" id="Io7-6a-fQa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHx-3C-eQQ">
@@ -110,13 +110,21 @@
                                 <state key="normal" title="Forgot Password">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="action:" destination="Dec-dV-XBj" eventType="touchUpInside" id="c6Y-rI-vOO"/>
+                                    <action selector="actionButton:" destination="Dec-dV-XBj" eventType="touchUpInside" id="yr1-fe-dOz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqu-bM-45X">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Main" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqu-bM-45X">
                                 <rect key="frame" x="206" y="405" width="87" height="27"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Main"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Create account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionButton:" destination="Dec-dV-XBj" eventType="touchUpInside" id="6y4-1u-UEk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCT-TH-XhD">
                                 <rect key="frame" x="174.5" y="454.5" width="25.5" height="26.5"/>
@@ -142,6 +150,10 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action:" destination="Dec-dV-XBj" eventType="touchUpInside" id="BKn-yK-afQ"/>
+                                    <action selector="actionButton:" destination="Dec-dV-XBj" eventType="touchUpInside" id="Hhc-T2-wr9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbC-xW-2NX">
                                 <rect key="frame" x="52" y="571" width="270" height="38"/>
@@ -160,6 +172,10 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="action:" destination="Dec-dV-XBj" eventType="touchUpInside" id="60j-ly-io5"/>
+                                    <action selector="actionButton:" destination="Dec-dV-XBj" eventType="touchUpInside" id="Fxs-dO-qGi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -203,6 +219,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="t1U-bm-vod"/>
                     <connections>
+                        <outlet property="createAccBTN" destination="rqu-bM-45X" id="Gkv-8z-6qK"/>
+                        <outlet property="facebookBTN" destination="8cK-r3-O4m" id="Rdw-Kr-bcg"/>
+                        <outlet property="forgotPasswordBTN" destination="89x-Dr-6Di" id="7KX-MW-h6W"/>
+                        <outlet property="googleBTN" destination="FbC-xW-2NX" id="94a-rc-fJX"/>
+                        <outlet property="loginBTN" destination="s6g-7E-TLS" id="vOf-fe-YhI"/>
                         <outlet property="passWordTF" destination="FWj-EZ-OB7" id="FIB-tk-EqK"/>
                         <outlet property="userNameTv" destination="BrY-Ik-cZt" id="pN9-Pc-mrN"/>
                     </connections>
@@ -214,7 +235,7 @@
         <!--Register View Controller-->
         <scene sceneID="9st-KD-1Vx">
             <objects>
-                <viewController id="SOM-cC-J42" customClass="RegisterViewController" customModule="LoveParadise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RegisterViewController" storyboardIdentifier="RegisterViewController" id="SOM-cC-J42" customClass="RegisterViewController" customModule="LoveParadise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jcP-PB-Mvg"/>
                         <viewControllerLayoutGuide type="bottom" id="FaQ-Kf-Hr8"/>
@@ -259,10 +280,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNo-kP-A7N">
                                 <rect key="frame" x="37.5" y="435.5" width="112.5" height="59"/>
                                 <state key="normal" title="Đăng ký"/>
+                                <connections>
+                                    <action selector="actionButton:" destination="SOM-cC-J42" eventType="touchUpInside" id="gm2-2Z-GMF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-JI-M8K">
                                 <rect key="frame" x="225" y="435" width="112.5" height="59"/>
                                 <state key="normal" title="Thoát"/>
+                                <connections>
+                                    <action selector="actionButton:" destination="SOM-cC-J42" eventType="touchUpInside" id="tx0-39-gww"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -301,6 +328,10 @@
                             <constraint firstItem="jyG-gd-mMf" firstAttribute="centerX" secondItem="AdH-EU-bhP" secondAttribute="centerX" id="zXq-Sn-vvl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exitBTN" destination="3hv-JI-M8K" id="gxc-Lx-Z9w"/>
+                        <outlet property="registerBTN" destination="UNo-kP-A7N" id="hoj-ON-p03"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FzA-rI-q8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,7 +375,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="40d-6Y-6yc" id="Ymv-Yf-2TX">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -401,7 +432,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XZj-0t-XLD" id="mNB-W4-xm1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

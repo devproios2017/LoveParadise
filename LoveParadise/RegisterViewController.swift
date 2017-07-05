@@ -10,26 +10,36 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var registerBTN: UIButton!
+    @IBOutlet weak var exitBTN: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //hide keyboard
+        self.hideKeyboardWhenTappedAround()
+        //hide navigation bar
         navigationController?.navigationBar.isHidden = false
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func actionButton(_ sender: UIButton){
+        switch sender {
+        case exitBTN:
+            let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.present(loginVC, animated: true, completion: nil)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        case registerBTN:
+            register()
+        default:
+            break
+        }
     }
-    */
+    func register(){
+        print("click register")
+    }
+    
+    
 
 }
